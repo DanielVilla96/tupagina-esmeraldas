@@ -478,42 +478,70 @@ img {
 
 .gem {
     position: absolute;
-    width: 48px;
-    height: 48px;
+    width: 28px;
+    height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.35;
+    opacity: 0.18;
     animation: float-gem 6s ease-in-out infinite;
-    filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.3));
+    filter: drop-shadow(0 0 6px rgba(16, 185, 129, 0.18));
 }
 
 .gem-1 {
-    top: 15%;
-    left: 10%;
+    top: 9%;
+    left: 4%;
     animation-delay: 0s;
     font-size: 2.5rem;
 }
 
 .gem-2 {
-    top: 25%;
-    right: 12%;
+    top: 18%;
+    right: 6%;
     animation-delay: 2s;
     font-size: 1.8rem;
 }
 
 .gem-3 {
-    bottom: 30%;
-    left: 8%;
+    bottom: 18%;
+    left: 3%;
     animation-delay: 4s;
     font-size: 3rem;
 }
 
 .gem-4 {
-    bottom: 20%;
-    right: 15%;
+    bottom: 14%;
+    right: 5%;
     animation-delay: 1s;
     font-size: 2rem;
+}
+
+@media (min-width: 1280px) {
+    .gem {
+        width: 22px;
+        height: 22px;
+        opacity: 0.14;
+    }
+
+    .gem-1 {
+        top: 8%;
+        left: 3%;
+    }
+
+    .gem-2 {
+        top: 16%;
+        right: 4%;
+    }
+
+    .gem-3 {
+        bottom: 16%;
+        left: 2%;
+    }
+
+    .gem-4 {
+        bottom: 12%;
+        right: 4%;
+    }
 }
 
 /* ============================================
