@@ -244,6 +244,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
+    // ICONOS ALEATORIOS - REEMPLAZAR CON IMÁGENES PNG
+    // ==========================================
+    function setRandomIcons() {
+        const images = ['1.png', '2.png', '3.png', '4.png'];
+        const icons = document.querySelectorAll('.random-icon');
+
+        icons.forEach(icon => {
+            const randomIndex = Math.floor(Math.random() * images.length);
+            icon.src = images[randomIndex];
+        });
+    }
+
+    setRandomIcons();
+
+    // ==========================================
     // BOTONES "CONSULTAR PRECIO" - SCROLL A CONTACTO
     // ==========================================
     const consultButtons = document.querySelectorAll('.btn-card');
