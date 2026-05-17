@@ -368,6 +368,54 @@ img {
     font-weight: 300;
 }
 
+/* ===== HIGHLIGHT "MÁS HERMOSOS DEL MUNDO" ===== */
+.highlight-world {
+    display: inline-block;
+    font-weight: 700;
+    background: linear-gradient(135deg, #0f8b5e, #10b981, #d4af37, #f0d68a, #10b981, #0f8b5e);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: world-shimmer 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 12px rgba(16, 185, 129, 0.35));
+    position: relative;
+}
+
+.highlight-world::after {
+    content: '';
+    position: absolute;
+    inset: -2px -6px;
+    background: radial-gradient(ellipse at center, rgba(16, 185, 129, 0.12), transparent 70%);
+    animation: world-glow 2s ease-in-out infinite;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+@keyframes world-shimmer {
+    0%, 100% {
+        background-position: 0% 50%;
+        filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.3));
+    }
+    25% {
+        background-position: 100% 0%;
+        filter: drop-shadow(0 0 16px rgba(212, 175, 55, 0.4));
+    }
+    50% {
+        background-position: 50% 100%;
+        filter: drop-shadow(0 0 20px rgba(16, 185, 129, 0.5));
+    }
+    75% {
+        background-position: 0% 50%;
+        filter: drop-shadow(0 0 16px rgba(212, 175, 55, 0.4));
+    }
+}
+
+@keyframes world-glow {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+}
+
 .hero-actions {
     display: flex;
     gap: 1rem;
