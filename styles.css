@@ -153,30 +153,30 @@ img {
 }
 
 .logo-img {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
 }
 
 .gem-img {
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .product-img-icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 16px;
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
     object-fit: cover;
     margin: 0 auto;
 }
 
 .about-img-icon {
-    width: 120px;
-    height: 120px;
-    border-radius: 24px;
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
     object-fit: cover;
     margin: 0 auto;
 }
